@@ -1,0 +1,145 @@
+.create-post-form {
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+
+.text-area {
+    resize: none;
+    height: 200px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+
+.Post {
+    background: #ECF0F1;
+    padding: 5px 10px 5px 20px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.Posts {
+    display: flex;
+    
+    flex-direction: column;
+    max-width: 60%;
+    
+}
+.Down{
+    display: flex;
+    flex-direction: column;
+}
+.Like_Count {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 80px;
+}
+.Up {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    align-items: center;
+}
+.UpName {
+    font-weight: bold;
+    margin-right: auto;
+}
+.Forma {
+    margin-bottom: 100px;
+}
+
+.UpDate {
+    margin-left: auto;
+}
+.UpAvatar {
+    
+    max-height: 50px;
+    margin-right:10px;
+    border-radius: 50%;
+}
+.PostPhoto{
+    margin-top:30px;
+    max-width: 40%;
+    cursor: pointer;
+}
+.PostText {
+    max-width: 550px;
+    word-wrap: break-word;
+}
+.PostTitle{
+
+}
+
+.SomeonesProfile {
+    display: flex;
+    margin-right: 8px;
+    transition: transform 0.3s;
+}
+    .SomeonesProfile:hover {
+        transform: scale(1.1); 
+        cursor: pointer;
+    }
+
+
+@media (max-width: 1030px) {
+    .PostText {
+        max-width: 100%;
+        word-break: break-all;
+
+    }
+    
+}
+@media (max-width: 560px){
+
+    .Posts {
+        display: flex;
+        flex-direction: column;
+        max-width: 85%;
+        font-size: 70%;
+    }
+    .Heart {
+        transform: scale(0.8);
+    }
+    .UpName {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    .Like_Count {
+        display: flex;
+        justify-content: right;
+        margin-bottom: 80px;
+        align-items:center;
+    }
+}

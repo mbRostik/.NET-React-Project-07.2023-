@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.83-alpha">
+  <PropertyGroup>
+    <StartupCommand>set BROWSER=none&amp;&amp;npm start</StartupCommand>
+    <JavaScriptTestRoot>src\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
+    <!-- Command to run on project build -->
+    <BuildCommand>
+    </BuildCommand>
+    <!-- Command to create an optimized build of the project that's ready for publishing -->
+    <ProductionBuildCommand>npm run build</ProductionBuildCommand>
+    <!-- Folder where production build objects will be placed -->
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\build</BuildOutputFolder>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\components\Navbar\" />
+    <Folder Include="src\components\News\" />
+    <Folder Include="src\components\Login\" />
+    <Folder Include="src\components\Posts\MyPosts\" />
+    <Folder Include="src\components\Posts\AllPosts\" />
+    <Folder Include="src\components\Profile\Settings\" />
+    <Folder Include="src\components\Profile\SomeoneProfile\" />
+    <Folder Include="src\components\Wallet\Coins\" />
+    <Folder Include="src\components\Wallet\Wallets\" />
+    <Folder Include="src\Functions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\components\Registration\NewFile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\components\css\NewFile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\components\Registration\NewFile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\components\Posts\FollowedPosts\NewFile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\components\Posts\FollowedPosts\FollowedPosts" />
+  </ItemGroup>
+</Project>
